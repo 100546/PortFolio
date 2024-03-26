@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
+
+span {
+  color: #6DA4AA;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Comfortaa', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: auto 100%;
+  height: 100vh;
+  background-image: url(images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 32px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.navbar a {
+  position: relative;
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 400;
+  margin-left: 40px;
+}
+
+.navbar a::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #6DA4AA;
+  transition: .4s;
+}
+
+.navbar a:hover::before {
+  width: 80%;
+}
+
+.noah_img img {
+  width: 600px;
+  height: auto;
+  border-radius: 15px;
+}
+
+.noah {
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 2rem;
+}
+
+section {
+  padding: 0 12%; 
+}
+
+.noah_text h1 {
+  font-size: 48px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 25px;
+}
+
+.noah_text p {
+  font-weight: 500;
+  font-size: 18px;
+  color: #fff;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.noah_text h4 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.noah_text a {
+  display: inline-block;
+  padding: 10px 40px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #6DA4AA;
+  color: #fff;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  line-height: 2;
+  transition: background-color 1s ease, border-color 0.1s ease, transform 1s ease;
+}
+
+.noah_text a:hover {
+  background-color: transparent;
+  border-color: #fff;
+  transform: translateY(5px);
+}
+
+.icons {
+  position: absolute;
+  top: 50%;
+  padding: 0 9.5%;
+  transform: translateY(-10%);
+}
+
+.icons i {
+  display: block;
+  margin: 30px 0;
+  font-size: 25px;
+  color: #fff;
+  transition: all .50s ease;
+  cursor: pointer;
+}
+
+.icons i:hover {
+  color: #6DA4AA;
+  transform: translateY(5px);
+}
+.icons a {
+  text-decoration: none;
+}
+main {
+  background-color: #1f2b37;
+  height: 100%;
+}
+
+.about {
+  width: 100%;
+  padding: 100px 0px;
+ 
+}
+
+.about img {
+  height: auto;
+  width: 430px;
+  border-radius: 5px;
+}
+
+.about-text {
+  width: 550px;
+}
+
+.main {
+  width: 1130px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.about-text h2{
+  color: #FFF;
+  font-size: 75px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+.about-text h5{
+  color: #fff;
+  letter-spacing: 2px;
+  font-size: 22px;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+
+.about-text p{
+  color: #fff;
+  letter-spacing: 0.5px;
+  line-height: 28px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.projects{
+  background: #0f141a;
+  width: 100%;
+  padding: 100px 0px;
+  height: 100%;
+}
+
+.title h2{
+  color: #fff;
+  font-size: 70px;
+  width: 1130px;
+  margin: 30px auto;
+  text-align: center;
+
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+
+.card {
+  height: 365px;
+  width: 335px;
+  padding: 20px 35px;
+  background: #1f2b37;
+  border-radius: 20px;
+  margin: 20px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.card i {
+  font-size: 32px;
+  display: block;
+  text-align: center;
+  margin: 25px;
+  color: #6DA4AA;
+}
+
+h5 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #fff;
+
+}
+
+.pra p {
+  color: #fff;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 25px;
+}
+
+.card .button {
+  display: inline-block;
+  color: #fff;
+  background-color: #6DA4AA;
+  border: 1px solid transparent;
+  padding: 8px 30px;
+  line-height: 2;
+  font-size: 8px;
+  font-weight: 700;
+  border-radius: 5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all .50s ease;
+  cursor: pointer;
+}
+
+#closed{
+  cursor: not-allowed;
+}
+
+.card .button:hover {
+    background: transparent;
+    border: 1px solid #fff;
+    transform: translateY(4px);
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: #17222A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill h1 {
+  text-align: center;
+
+}
+
+.skill h3 {
+  margin: 5px;
+}
+
+.skill {
+  border-radius: 15px;
+  list-style: none;
+  width: 500px;
+  margin: 160px auto;
+  color: #fff;
+  background-color: #0f141a;
+  padding: 20px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 1.8), 0 10px 10px rgba(0, 0, 0, 0.50);
+}
+
+skill li {
+  margin: 20px 0;
+  padding: 10px;
+
+}
+
+.bar {
+  margin: 20px;
+  background: #353b48;
+  display: block;
+  height: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(.25, .8, .25,1);
+}
+
+.bar:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 1.8), 0 10px 10px rgba(0, 0, 0, 0.50);
+}
+
+.bar span {
+  height: 20px;
+  float: left;
+  background: linear-gradient(135deg, rgba(236, 0, 140, 1)0%, rgba(252, 103, 103, 1)100%);
+}
+
+.html {
+  width: 55%;
+  animation: html 2s;
+}
+.css {
+  width: 60%;
+  animation: css 2s;
+}
+.javascript {
+  width: 40%;
+  animation: javascript 2s;
+}
+.photoshop {
+  width: 40%;
+  animation: photoshop 2s;
+}
+
+@keyframes html {
+    0%{
+      width: 0%;
+    }
+    100%{
+      width: 55%;
+    }
+}
+@keyframes css {
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 60%;
+  }
+}
+@keyframes javascript {
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 40%;
+  }
+}
+@keyframes photoshop {
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 40%;
+  }
+}
+
